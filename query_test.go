@@ -6,7 +6,7 @@ package govcloudair
 
 import (
 	// "fmt"
-	"github.com/kradalby/govcloudair/testutil"
+	"github.com/rodion-goritskov/govcloudair/testutil"
 	. "gopkg.in/check.v1"
 )
 

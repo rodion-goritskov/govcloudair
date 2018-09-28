@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	types "github.com/kradalby/govcloudair/types/v56"
+	types "github.com/rodion-goritskov/govcloudair/types/v56"
 )
 
 const (
