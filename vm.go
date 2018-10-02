@@ -286,6 +286,14 @@ func (v *VM) SetStorageProfile(name string) error {
 	return nil
 }
 
+func (v *VM) SetStorageSize(size int) {
+	for index := range v.VM.VirtualHardwareSection.Item {
+		if v.VM.VirtualHardwareSection.Item[index].ResourceType == types.ResourceTypeDisk {
+			v.VM.VirtualHardwareSection.Item[index].HostResource[0].Capacity = size
+		}
+	}
+}
+
 // func (v *VM) SetStorageProfileWithRequest(storageProfile types.Reference) (Task, error) {
 
 // 	return Task{}, nil
